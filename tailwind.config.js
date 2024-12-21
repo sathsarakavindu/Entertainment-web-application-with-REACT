@@ -1,3 +1,6 @@
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,6 +12,8 @@ export default {
   },
   plugins: [
     // eslint-disable-next-line no-undef
-    require('tailwindcss-no-scrollbar')
+    // require('tailwindcss-no-scrollbar')
+    tailwindcss(),
+    autoprefixer(),
   ],
 }
